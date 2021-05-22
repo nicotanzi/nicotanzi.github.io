@@ -1715,7 +1715,7 @@ button,
       margin: 0 2em 0 0; }
       .features article .image img {
         display: block;
-        height: 7em; }
+        width: 7em; }
     .features article .content {
       -moz-flex-grow: 1;
       -webkit-flex-grow: 1;
