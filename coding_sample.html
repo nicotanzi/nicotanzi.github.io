@@ -88,17 +88,63 @@
 										</div>
 
 										<h3>Data Vizualization</h3>
-										<p>Description of cool code 2.</p>
+										<p>It is well known the power of R and the ggplot2 package to make
+										beautiful plots, and this is an example of it. However, I chose this code
+									  mainly for other reason, it is often the case that we need to porduce
+										many plots in order to get a better understanding of the varaibles and
+									  to have a wider set of candidates plot for the final documment.<br>
+									  In this code I make use of R's list, loops and the ggplot2 package to
+									  systematically create many plots that relates different variables. </p>
 										<pre><code> run cool code
 										</code></pre>
 
-										<h3>Applying econometrics methods to a panel data</h3>
-										<p>Description of cool code 4.</p>
+										<h3>Creating a function: test for X</h3>
+										<p>Most of the statistical functions and methods that we often use
+										are already pre-build in R or in some package. However there are
+									 	some exceptions, for example the test of X exist only for the case of Y.
+										There is not package that provides it for Z. The code above creates a
+										function that covers this gap.</p>
 										<pre><code> run cool code
 										</code></pre>
 
-										<h3>Time series analysis of Argentinian monetary aggregate</h3>
-										<p>Description of cool code 5.</p>
+										<h3>Algorithm for evalueting different GARCH models</h3>
+										<p>When we deal with leptokurtic time series that show
+										conditional heterocesaticity there is no Ljung-Both Algorithm
+										to sistematically arrive to a best subset of possible models
+									 	(given some desired features/restrictions). The process itself
+										becames more 'home made', in order to make this process easier
+										I devoloped this code to made a (not very efficient) algorithm
+										to test differents GARCH models.</p>
+										<pre><code> run cool code
+										</code></pre>
+
+										<h3>Evaluating fixed effects significance (and a small discussion)</h3>
+										<p>The code above shows an example of fixed effects OLS estimation,
+											that we can think of as the 'within' moedel, and compares it against
+											the between estimation. Althoug R makes it extreamly easy to
+											make this kind of calculation. I choose this example because
+											it also brings the oportunity for a more theoretical discussion.
+											Is the Hausmann test useful in this situation to compare both models?
+											My answer is no, and I explain you why with the above code.
+										</p>
+										<pre><code> run cool code
+										</code></pre>
+
+										<h3>A weighted random forest</h3>
+										<p>Random forest it is bastly used method in statistical (machine)
+											learning, I am not here to discuss how to implement it, but to
+											show an small tweak for making the algorithm more suitable in some cases.
+											In an affored mention project with a team we were devoloping a predictive
+											model to (among other goals) detect which neigbours and houselholds are
+											more likely to shows bigger numbers of kids dropout. Of course, the model
+											wouldn't be perfect so a question that puzzled me was: Which kind of error
+											is worse? Miss calificate a home as high risk when it is not or calificate
+											a home as low risk when it is not?<br>
+											Fortunately, the loss function of the random forest algorithm give us the
+											space we need to make some losses heavier than others, and therefore making
+											the algorithm itself more biased to one type of error and less prone to the
+											other type.
+										</p>
 										<pre><code> run cool code
 										</code></pre>
 
