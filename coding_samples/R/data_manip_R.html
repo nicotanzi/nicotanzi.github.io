@@ -187,9 +187,9 @@ library(scales)
 library(haven)
 
 # Load data ----
-#setwd(dirname(rstudioapi::getSourceEditorContext()$path)) # where the file is located
-#hl &lt;- read_sav(&quot;hl.sav&quot;)
-#hl_dic &lt;- labelled::lookfor(hl) </code></pre>
+setwd(dirname(rstudioapi::getSourceEditorContext()$path)) # where the file is located
+hl &lt;- read_sav(&quot;hl.sav&quot;)
+hl_dic &lt;- labelled::lookfor(hl) </code></pre>
 </div>
 <div id="creating-an-id-for-each-hosehold" class="section level3">
 <h3>Creating an id for each hosehold:</h3>
@@ -212,14 +212,14 @@ hl &lt;- hl  %&gt;%
     # Sexo
     HL4=replace_na(HL4,1),
     HL4_t  = NA, HL4_t  = replace(HL4_t,  HL4  == 1, 1), HL4_t  = replace(HL4_t,  HL4  == 2, 0),
-    
+
     # Edad
     HL6=replace(HL6,  HL6  &gt; 95, NA), # convertir en NA lo que no conocemos
-    
+
     # Asistencia Escolar
     asistio  = 0, asistio  = replace(asistio,  ED3  == 2, 1),
     asiste  = 0, asiste  = replace(asiste,  ED3  == 1, 1)
-    
+
   )
 hl$HL4&lt;-hl$HL4_t</code></pre>
 </div>
@@ -232,14 +232,14 @@ hl$HL4&lt;-hl$HL4_t</code></pre>
 
 # Es padre de algÃºn niÃ±o del hogar
 hl&lt;-hl %&gt;%
-  group_by(idhogar) %&gt;% 
+  group_by(idhogar) %&gt;%
   mutate(es_padre= as.numeric( (HL1 %in% HL12 | HL1 %in% HL14) ) )
 
-# Es niño/a 
+# Es niño/a
 hl&lt;-hl %&gt;% mutate(ninio= as.numeric( HL6&gt;4 &amp; HL6&lt;18 ))
 
 # Adulto que no es padre - otro_ad
-hl &lt;- hl %&gt;% 
+hl &lt;- hl %&gt;%
   mutate( otro_ad = as.numeric(HL6&gt;17)*(1-es_padre) )</code></pre>
 </div>
 <div id="education-level" class="section level3">
@@ -248,44 +248,44 @@ hl &lt;- hl %&gt;%
 <pre class="r"><code># Años de Educación
 hl &lt;- hl %&gt;%
   mutate( ED4B_t=replace_na(ED4B,0),
-          ED4B_t=replace(ED4B_t, ED4B_t  &gt; 20 , 0) ) %&gt;% 
+          ED4B_t=replace(ED4B_t, ED4B_t  &gt; 20 , 0) ) %&gt;%
   mutate( edu=0,edu=case_when(
-    
+
     # Primario
     ED4A==01 &amp; ED4B_t &lt; 6 ~ 0+ED4B_t, # primaria incompleta
     ED4A==01 &amp; ED4B_t &gt; 7 ~ 0+ED4B_t, # si se pasa de 7, entonces poneme 7 (completa)
     ED4A==02 ~ 7, # primaria completa
-    
+
     # EGB
     ED4A==03 &amp; ED4B_t &lt; 9 ~ 0+ED4B_t, # EGB incompleta
     ED4A==03 &amp; ED4B_t &gt; 8 ~ 0+ED4B_t, # si se pasa de 8, entonces poneme 9 (completa)
     ED4A==04 ~ 9, # EGB completa
-    
+
     # Secundario incompleto con primaria de 6 años
     ED4A==05 &amp; ED4B_t &lt; 5 ~ 6+ED4B_t,
     ED4A==05 &amp; ED4B_t &gt; 4 ~ 12, # si se pasa de 5, entonces poneme 12 (completa)
-    
+
     # Secundario incompleto con primaria de 7 años
     ED4A==06 &amp; ED4B_t &lt; 5 ~ 7+ED4B_t,
     ED4A==06 &amp; ED4B_t &gt; 4 ~ 12, # si se pasa de 4, entonces poneme 12 (completa)
-    
+
     # Polimodal incompleto
     ED4A==08 &amp; ED4B_t &lt; 3 ~ 9+ED4B_t,
     ED4A==08 &amp; ED4B_t &gt; 2 ~ 12, # si se pasa de 2, entonces poneme 12 (completa)
-    
+
     # Secundario/Polimodal completo
     ED4A==07 ~ 12,
     ED4A==09 ~ 12,
-    
+
     # Terciario o Universitario completo o incompleto
     ED4A==10 ~ 13,
     ED4A==11 ~ 12,
     ED4A==12 ~ 12,
     ED4A==13 ~ 12,
-    
+
     # Posgrado
     ED4A==14 ~ 17
-    
+
   ))</code></pre>
 </div>
 <div id="from-individual-level-to-household-level" class="section level3">
@@ -295,7 +295,7 @@ hl &lt;- hl %&gt;%
 <p>Then I group the individual variables. Above there are some simple examples. -Does this household have kids? -What is the proportion of men in the household? -What is the proportion of boys among the kids in the household? -What is the avrage age of the household members? -What is the avrage age of the kids in the household?</p>
 <pre class="r"><code># TIENE NIÃÑOS EL HOGAR - ninios
 A &lt;- hl %&gt;% group_by(idhogar) %&gt;%
-  summarise(ninios=any(HL6&lt;18 &amp; HL6&gt;4)) %&gt;% 
+  summarise(ninios=any(HL6&lt;18 &amp; HL6&gt;4)) %&gt;%
   mutate(ninios=as.numeric(ninios))
 A&lt;-left_join(hlid,A) %&gt;% mutate(ninios=replace_na(ninios,0))
 hl_hh&lt;-A
@@ -324,32 +324,32 @@ hl_hh&lt;-left_join(hl_hh,A)</code></pre>
 <p>Above there are some examples that require to think a little more. Those lines try to summarize the parenthood realtionships of the household. The questions that answer are: -Is the household's chief the father/mother of every kid in the household? -Is there at least one kid whose mom is not a member of the household? -Is there at least one kid whose dad is not a member of the household? -(Is there at least one kid whose parents are not members of the household?) -What is the avrage age of the kids in the household?</p>
 <pre class="r"><code># El/la jefe/a del hogar es p/madre de todos los niÃ±os del hogar - jefe_padre
 A &lt;- hl %&gt;% filter(ninio==1) %&gt;% group_by(idhogar) %&gt;%
-  summarise(jefe_padre=all(HL3==03)) %&gt;% 
+  summarise(jefe_padre=all(HL3==03)) %&gt;%
   mutate(jefe_padre=as.numeric(jefe_padre))
 A&lt;-left_join(hlid,A) %&gt;% mutate(jefe_padre=replace_na(jefe_padre,0))
 hl_hh&lt;-left_join(hl_hh,A)
 
 # Hay por lo menos un niÃ±o sin su mamÃ¡ viviendo en el hogar - sinmama
 A &lt;- hl %&gt;% group_by(idhogar) %&gt;%
-  summarise(sinmama=any(HL12==00,na.rm = TRUE)) %&gt;% 
+  summarise(sinmama=any(HL12==00,na.rm = TRUE)) %&gt;%
   mutate(sinmama=as.numeric(sinmama))
 hl_hh&lt;-left_join(hl_hh,A)
 
 # Hay por lo menos un niÃ±o sin su papÃ¡ viviendo en el hogar - sinpapa
 A &lt;- hl %&gt;% group_by(idhogar) %&gt;%
-  summarise(sinpapa=any(HL14==00,na.rm = TRUE)) %&gt;% 
+  summarise(sinpapa=any(HL14==00,na.rm = TRUE)) %&gt;%
   mutate(sinpapa=as.numeric(sinpapa))
 hl_hh&lt;-left_join(hl_hh,A)
 
 # Hay por lo menos un niÃ±o que no tiene ningÃºn padre viviendo en el hogar - sinpadres
 A &lt;- hl %&gt;% group_by(idhogar) %&gt;%
-  summarise(sinpadres=any(HL14==00 &amp; HL12==00,na.rm = TRUE)) %&gt;% 
+  summarise(sinpadres=any(HL14==00 &amp; HL12==00,na.rm = TRUE)) %&gt;%
   mutate(sinpadres=as.numeric(sinpadres))
 hl_hh&lt;-left_join(hl_hh,A)</code></pre>
 <p>This code fragment asks about other adults that are not mothers or fathers of any children in the household -Is there any? -How many? -How old are they? -Which is the men proportion of them?</p>
 <pre class="r"><code># Hay adultos que no son padres de los niÃ±os del hogar viviendo en el hogar - otros_ad
 A &lt;- hl %&gt;% group_by(idhogar) %&gt;%
-  summarise(otros_ad=any(otro_ad==1,na.rm = TRUE)) %&gt;% 
+  summarise(otros_ad=any(otro_ad==1,na.rm = TRUE)) %&gt;%
   mutate(otros_ad=as.numeric(otros_ad))
 hl_hh&lt;-left_join(hl_hh,A)
 
@@ -372,7 +372,7 @@ hl_hh&lt;-left_join(hl_hh,A)</code></pre>
 <p>Looking at the individual answers for parents of each kid, we can know if there are kids whith differents fathers or mothers.</p>
 <pre class="r"><code># Algun niÃ±o tiene diferente padre o madre que el resto - dif_padres
 A &lt;- hl %&gt;% filter(ninio==1) %&gt;% group_by(idhogar) %&gt;%
-  summarise(c_madres=n_distinct(HL12),c_padres=n_distinct(HL14)) %&gt;% 
+  summarise(c_madres=n_distinct(HL12),c_padres=n_distinct(HL14)) %&gt;%
   mutate(dif_padres= as.numeric( c_madres&gt;1 | c_padres&gt;1 ) ) ; A&lt;-A[,-c(2,3)]
 A&lt;-left_join(hlid,A) %&gt;% mutate(dif_padres=replace_na(dif_padres,0))
 hl_hh&lt;-left_join(hl_hh,A)</code></pre>
