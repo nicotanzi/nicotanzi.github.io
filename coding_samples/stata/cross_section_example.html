@@ -167,7 +167,7 @@ a.plain:hover {text-decoration:underline;}
 pre, code {font-family: "lucida console", monospace;}
 pre.stata {font-size:13px; line-height:13px;}
 pre {padding:8px; border:1px solid #c0c0c0; border-radius:8px; background-color:#fdfdfd;}
-code {color:#3366cc; background-color:#fafafa;}
+code {color:#3366cc; background-color:#fafafa;white-space: pre;}
 pre code { color:black; background-color:white}
 /* Added for Pandoc */
 figure > img, div.figure > img {display:block; margin:auto}
@@ -195,12 +195,11 @@ table tbody:last-child tr:last-child td {border-bottom:1px solid black;}
 <p>First, a typical set up. You can dowload the data from <a href="https://github.com/nicotanzi/coding_sample_stata/tree/main/cross_section">here</a>, as well as the code itself.</p>
 <pre><code>* WorkingDirectory
 cd &quot;your-directory&quot;
-* Log-File
-log using registro, replace
 * Packages
 *net install grc1leg, from(http://www.stata.com/users/vwiggins) /* many graphs, one legend */
 * Load data
-use russia, clear</code></pre>
+clear all
+use russia</code></pre>
 
 <h2 id="a-little-bit-of-loops-macro-usage-and-graphics">A LITTLE BIT OF LOOPS, MACRO USAGE AND GRAPHICS</h2>
 <p>Among different variables we’ve got these:</p>
@@ -216,29 +215,23 @@ marsta3         float   %9.0g                 Divorced
 marsta4         float   %9.0g                 Widowed
 gender          double  %10.0g                Male
 </pre>
-<p>I’m curious about satisfaction with life.</p>
-<p>Does marital status plays a role? Does gender?</p>
-<p>Let’s do some plots</p>
+<p>I’m curious about satisfaction with life. Does marital status have relation with it? Does gender? Let’s do some plots</p>
 <pre><code>egen temp = rowtotal(marsta*)
 gen marsta0 = 1-temp
-label variable marsta0 &quot;Forever alone&quot; /* XD */
+label variable marsta0 &quot;Forever alone&quot;
 drop temp</code></pre>
 
 <p>Now a cool loop</p>
 <pre><code>forvalues k = 0(1)4{
   local titulo : variable label marsta`k&#39;
-  twoway (histogram satlif if gender==1 &amp; marsta`k&#39;==1, bin(5) color(red%30)) ///        
-       (histogram satlif if gender==0 &amp; marsta`k&#39;==1, bin(5) color(green%30)), ///   
+  twoway (histogram satlif if gender==1 &amp; marsta`k&#39;==1, bin(5) color(red%30)) ///
+       (histogram satlif if gender==0 &amp; marsta`k&#39;==1, bin(5) color(green%30)), ///
         name(H_`k&#39;) title(&quot;`titulo&#39;&quot;) legend(order(1 &quot;Male&quot; 2 &quot;Female&quot; ))
 }
 quietly graph dir H_*
 grc1leg `r(list)&#39;, l1(Density) legendfrom(H_1)
 graph close H_*</code></pre>
-<pre class='stata'>  2. local titulo : variable label marsta`k'
-  3. twoway (histogram satlif if gender==1 &amp; marsta`k'==1, bin(5) color(red%3
 
-  4. }
-</pre>
 <figure>
 <img src="multi_hist.png" alt="Multiple overlayed histograms" /><figcaption aria-hidden="true">Multiple overlayed histograms</figcaption>
 </figure>
@@ -260,25 +253,7 @@ foreach v of varlist `r(varlist)&#39; {
         display &quot;`: var label `v&#39;&#39;&quot;
     }
 }</code></pre>
-<pre class='stata'>  2.      quietly ttest `v', by(hhpres)
-  3.       if r(p)&lt;0.01 {
-  4.             display "`: var label `v''"
-  5.       }
-  6. }
-Site
-Male
-Age (in months)
-Health Prob last 30 days
-Self-reported Height
-Ever Had Heart Attack
-Smokes
-Height
-HH Income Real
-Geographic Area
-Married
-Divorced
-Widowed
-</pre>
+
 <h2 id="some-code-lines-with-the-good-old-ols">SOME CODE LINES WITH THE GOOD OLD OLS</h2>
 <p>Suppose that we want to explain a continuous variable using another continuous variable, so we don’t have many options:</p>
 <pre class='stata'>. describe totexp monage htself tincm_r
@@ -318,21 +293,15 @@ tincm_r         double  %10.0g                HH Income Real
 -
 </pre>
 <p>Let’s do bad things and over-fit the regression using a polynomial. In fact, let’s see how R^2 changes while the degree of the polynomial rises.</p>
-<pre><code>matrix mat_r = J(10,2,.)
-forvalues k = 1(1)10{
+<pre><code>quietly matrix mat_r = J(10,2,.)
+quietly forvalues k = 1(1)10{
     quietly gen monage_`k&#39; = monage^`k&#39;
     quietly ds monage_*
     quietly reg totexp `r(varlist)&#39;
     quietly matrix mat_r[`k&#39;,2] = e(r2)
     quietly matrix mat_r[`k&#39;,1] = `k&#39;
 }</code></pre>
-<pre class='stata'>  2.      quietly gen monage_`k' = monage^`k'
-  3.      quietly ds monage_*
-  4.      quietly reg totexp `r(varlist)'
-  5.      quietly matrix mat_r[`k',2] = e(r2)
-  6.      quietly matrix mat_r[`k',1] = `k'
-  7. }
-</pre>
+
 <pre><code>drop _all
 svmat double mat_r
 matrix drop mat_r
@@ -345,6 +314,5 @@ use russia, clear</code></pre>
 <p>To be continued…</p>
 <h2 id="logit-and-probit">LOGIT AND PROBIT</h2>
 <h2 id="clustered-standard-errors">CLUSTERED STANDARD ERRORS</h2>
-<pre><code>log close</code></pre>
 </body>
 </html>
