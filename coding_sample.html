@@ -1,117 +1,221 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Nicolas Tanzi - Coding Sample</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Nicolas Tanzi - Coding Sample</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong>Horacio Nicolás Tanzi</strong> Github page</a
+            >
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://github.com/nicotanzi"
+                  class="icon brands fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/nico-tanzi/"
+                  class="icon brands fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/tanzinicolas"
+                  class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+          <!-- Summary -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h1>Coding Sample</h1>
+                <p>This page is under construction !</p>
+              </header>
+              <p>
+                Coding has always been a lot of fun for me. When I was fifteen,
+                I taught myself HTML and CSS. Initially, I created simple web
+                pages to play pranks on my friends, but then I helped my father
+                create his own website.
+              </p>
+              <p>
+                While studying economics, I became devoted to R (great for
+                econometrics) and Julia (similar to MATLAB and excellent for
+                complex macroeconomic models). Later, I developed an interest in
+                Python and Data Science, which has now become the main language
+                I use.
+              </p>
+              <p>
+                Additionally, I have experience with SAS and SQL, which I used
+                to develop an ALM model for Banco Hipotecario, and LaTeX, which
+                I mastered while working as a research assistant, particularly
+                excelling with my TikZ plots.
+              </p>
+              <li>
+                <a href="https://github.com/nicotanzi" class="button big"
+                  >Github Repository</a
+                >
+              </li>
+              <ul class="actions"></ul>
+            </div>
+            <span class="image object">
+              <img src="images/code_pic.jpg" alt="" />
+            </span>
+          </section>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+          <!-- Content -->
+          <section>
+            <header class="major">
+              <h2>R</h2>
+            </header>
+            <p>I am good at it. Comming soon a better description</p>
 
-							<header id="header">
-								<a href="index.html" class="logo"><strong>Horacio Nicolás Tanzi</strong> Github page</a>
-								<ul class="icons">
-									<li><a href="https://github.com/nicotanzi" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/nico-tanzi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.instagram.com/tanzinicolas" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</header>
+            <h3>Data entry</h3>
+            <p>
+              Argentinian fiscal data it is not as easy to get as I would like.
+              The
+              <a href="https://www.economia.gob.ar/onp/ejecucion/2021"
+                >ministry of economy has a web page</a
+              >
+              that allows you to download an Excel file with the
+              Savings-Investment-Finincing account for a given month. I was
+              particualry interested in the value of: amortizations, debt
+              variations and financial results, monthly from 2005 to 2019. It is
+              clear, that doing this by hand would require a lot of time and
+              patience.<br />
+              Fortunately, this code solves this problem. It goes to the given
+              url, looks into the messy excel files and extracts the desired
+              data.
+            </p>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="coding_samples/R/data_entry_R.html"
+                    class="button fit"
+                    >Markdown code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_entry"
+                    class="button primary fit"
+                    >GitHub Repository</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-							<!-- Summary -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Coding Sample</h1>
-											<p>This page is under construction !</p>
-										</header>
-										<p>Coding has always be a lot of fun for me. When I was a fifteen years old I self-taught me HTML and CSS (as you can see).
-											<br>Now I focus on R, Julia, STATA and Latex (sepcially on TickZ).
-											Also, I used to programmed intesively in SAS, SQL and MATLAB.</p>
-											<li><a href="https://github.com/nicotanzi" class="button big">Github Repository</a></li>
-										<ul class="actions">
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/code_pic.jpg" alt="" />
-									</span>
-								</section>
+            <h3>Data manipulation</h3>
+            <p>
+              I participated in a project for the CEDH (UdeSA), where we used
+              the
+              <a hreflang="https://mics.unicef.org/surveys"
+                >MISC survey of UNICEF</a
+              >
+              for Argentina. It provides a large dataset about households and
+              individuals about a broad set of variables (related to education,
+              economic status, health, belief, violence exposure, etc). The main
+              goal of the project was to use this data to build a predictive
+              model of some key variables, such as domestic violence, school
+              dropout, teeneage pregnancy, etc.<br />
+              Before the fun stuff, we have to transform the raw dataset into a
+              more cmoprenhensive and operable dataset. This fragment of code
+              shows how from a precise understanding of the survey, it could be
+              possible to construct a the number of repeated years of every
+              child.
+            </p>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="coding_samples/R/data_manip_R.html"
+                    class="button fit"
+                    >Markdown code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation"
+                    class="button primary fit"
+                    >GitHub Repository</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-								<!-- Content -->
-									<section>
+            <h3>Data Visualization</h3>
+            <p>
+              It is well known the power of R and the ggplot2 package to make
+              beautiful plots, and this is an example of it. However, I chose
+              this code mainly for other reason, it is often the case that we
+              need to porduce many plots in order to get a better understanding
+              of the varaibles and to have a wider set of candidates plot for
+              the final documment.<br />
+              In this code I make use of R's list, loops and the ggplot2 package
+              to systematically create many plots that relates different
+              variables.
+            </p>
+            <span class="image fit">
+              <img src="coding_samples/R/multiple_plots.png" alt="" />
+            </span>
+            <pre><code> run cool code</code></pre>
 
-										<header class="major">
-											<h2>R</h2>
-										</header>
-										<p>I am good at it. Comming soon a better description</p>
+            <h3>Data Visualization. Others examples</h3>
+            <div class="box alt">
+              <div class="row gtr-50 gtr-uniform">
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/R/densities.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/R/barras.png" alt=""
+                  /></span>
+                </div>
+                <!-- Break -->
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/R/gap_badlar.jpeg" alt=""
+                  /></span>
+                </div>
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/R/M1.jpeg" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
 
-										<h3>Data entry</h3>
-										<p>Argentinian fiscal data it is not as easy to get as I would like.
-										The <a href="https://www.economia.gob.ar/onp/ejecucion/2021">ministry of economy has a web page</a>
-										that allows you to download an Excel file with the Savings-Investment-Finincing account
-										for a given month. I was particualry interested in the value of:
-										amortizations, debt variations and financial results,	monthly from 2005 to 2019.
-										It is clear, that doing this by hand would require a lot of time and patience.<br>
-										Fortunately, this code solves this problem. It goes to the given url,
-										looks into the messy excel files and extracts the desired data.</p>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="coding_samples/R/data_entry_R.html" class="button fit">Markdown code</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_entry" class="button primary fit">GitHub Repository</a></li>
-											</ul>
-										</div>
-
-										<h3>Data manipulation</h3>
-										<p>I participated in a project for the CEDH (UdeSA), where we used the
-										 <a hreflang="https://mics.unicef.org/surveys">MISC survey of UNICEF</a>
-										 for Argentina. It provides a large dataset about households and
-										 individuals about a broad set of variables (related to education,
-										 economic status, health, belief, violence exposure, etc).
-										 The main goal of the project was to use this data to build
-										 a predictive model of some key variables, such as domestic violence,
-										 school dropout, teeneage pregnancy, etc.<br>
-									 	 Before the fun stuff, we have to transform the raw dataset into
-								   	 a more cmoprenhensive and operable dataset. This fragment of code
-								   	 shows how from a precise understanding of the survey, it could be possible
-								   	to construct a the number of repeated years of every child.</p>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="coding_samples/R/data_manip_R.html" class="button fit">Markdown code</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation" class="button primary fit">GitHub Repository</a></li>
-											</ul>
-										</div>
-
-										<h3>Data Visualization</h3>
-										<p>It is well known the power of R and the ggplot2 package to make
-										beautiful plots, and this is an example of it. However, I chose this code
-									  mainly for other reason, it is often the case that we need to porduce
-										many plots in order to get a better understanding of the varaibles and
-									  to have a wider set of candidates plot for the final documment.<br>
-									  In this code I make use of R's list, loops and the ggplot2 package to
-									  systematically create many plots that relates different variables. </p>
-										<span class="image fit">
-											<img src="coding_samples/R/multiple_plots.png" alt="" />
-										</span>
-										<pre><code> run cool code</code></pre>
-
-										<h3>Data Visualization. Others examples</h3>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="coding_samples/R/densities.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="coding_samples/R/barras.png" alt="" /></span></div>
-												<!-- Break -->
-												<div class="col-6"><span class="image fit"><img src="coding_samples/R/gap_badlar.jpeg" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="coding_samples/R/M1.jpeg" alt="" /></span></div>
-											</div>
-										</div>
-
-										<!-- <h3>Creating a function: test for X</h3>
+            <!-- <h3>Creating a function: test for X</h3>
 										<p>Most of the statistical functions and methods that we often use
 										are already pre-build in R or in some package. However there are
 									 	some exceptions, for example the test of X exist only for the case of Y.
@@ -119,250 +223,373 @@
 										function that covers this gap.</p>
 										<pre><code> run cool code</code></pre> -->
 
-										<h3>Algorithm for evalueting different GARCH models</h3>
-										<p>When we deal with leptokurtic time series that show
-										conditional heterocesaticity there is no Ljung-Both Algorithm
-										to sistematically arrive to a best subset of possible models
-									 	(given some desired features/restrictions). The process itself
-										becames more 'home made', in order to make this process easier
-										I devoloped this code to made a (not very efficient) algorithm
-										to test differents GARCH models.</p>
-										<pre><code> run cool code</code></pre>
+            <h3>Algorithm for evalueting different GARCH models</h3>
+            <p>
+              When we deal with leptokurtic time series that show conditional
+              heterocesaticity there is no Ljung-Both Algorithm to
+              sistematically arrive to a best subset of possible models (given
+              some desired features/restrictions). The process itself becames
+              more 'home made', in order to make this process easier I devoloped
+              this code to made a (not very efficient) algorithm to test
+              differents GARCH models.
+            </p>
+            <pre><code> run cool code</code></pre>
 
-										<h3>A weighted random forest</h3>
-										<p>Random forest it is bastly used method in statistical (machine)
-											learning, I am not here to discuss how to implement it, but to
-											show an small tweak for making the algorithm more suitable in some cases.
-											In an affored mention project with a team we were devoloping a predictive
-											model to (among other goals) detect which neigbours and houselholds are
-											more likely to shows bigger numbers of kids dropout. Of course, the model
-											wouldn't be perfect so a question that puzzled me was: Which kind of error
-											is worse? Miss calificate a home as high risk when it is not or calificate
-											a home as low risk when it is not?<br>
-											Fortunately, the loss function of the random forest algorithm give us the
-											space we need to make some losses heavier than others, and therefore making
-											the algorithm itself more biased to one type of error and less prone to the
-											other type.
-										</p>
+            <h3>A weighted random forest</h3>
+            <p>
+              Random forest it is bastly used method in statistical (machine)
+              learning, I am not here to discuss how to implement it, but to
+              show an small tweak for making the algorithm more suitable in some
+              cases. In an affored mention project with a team we were
+              devoloping a predictive model to (among other goals) detect which
+              neigbours and houselholds are more likely to shows bigger numbers
+              of kids dropout. Of course, the model wouldn't be perfect so a
+              question that puzzled me was: Which kind of error is worse? Miss
+              calificate a home as high risk when it is not or calificate a home
+              as low risk when it is not?<br />
+              Fortunately, the loss function of the random forest algorithm give
+              us the space we need to make some losses heavier than others, and
+              therefore making the algorithm itself more biased to one type of
+              error and less prone to the other type.
+            </p>
 
-<!--                        STATA										 -->
-										<header class="major">
-											<h2>STATA</h2>
-										</header>
-										<p>Stata is easy.<p>
+            <!--                        STATA										 -->
+            <header class="major">
+              <h2>STATA</h2>
+            </header>
+            <p>Stata is easy.</p>
+            <p></p>
 
-										<h3>Loops, macro variables and plots with a cross section databes</h3>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="coding_samples/stata/cross_section_example.html" class="button fit">Markdown code</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_stata/tree/main/cross_section" class="button primary fit">GitHub Repository</a></li>
-											</ul>
-										</div>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="coding_samples/stata/R2.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="coding_samples/stata/multi_hist.png" alt="" /></span></div>
-											</div>
-										</div>
+            <h3>
+              Loops, macro variables and plots with a cross section databes
+            </h3>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="coding_samples/stata/cross_section_example.html"
+                    class="button fit"
+                    >Markdown code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_stata/tree/main/cross_section"
+                    class="button primary fit"
+                    >GitHub Repository</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="box alt">
+              <div class="row gtr-50 gtr-uniform">
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/stata/R2.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/stata/multi_hist.png" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
 
+            <h3>A time series example</h3>
+            <p>
+              Although, STATA it is not my preferred software for time series
+              analysis, it does have a simple code, and produces satisfactory
+              results. In the link below you can find an small code, that plays
+              with an univariate model.
+            </p>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="coding_samples/stata/time_series_example.html"
+                    class="button fit"
+                    >Markdown code</a
+                  >
+                </li>
+                <!-- <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_entry" class="button primary fit">GitHub Repository</a></li> -->
+              </ul>
+            </div>
 
+            <h3>Pabel Data</h3>
+            <p>Clever description.</p>
+            <pre><code> run cool code</code></pre>
 
-										<h3>A time series example </h3>
-										<p>Although, STATA it is not my preferred software for time
-										series analysis, it does have a simple code, and produces
-										satisfactory results. In the link below you can find an small
-										code, that plays with an univariate model.</p>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="coding_samples/stata/time_series_example.html" class="button fit">Markdown code</a></li>
-												<!-- <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_entry" class="button primary fit">GitHub Repository</a></li> -->
-											</ul>
-										</div>
+            <!--                        MATLAB										 -->
+            <header class="major">
+              <h2>MATLAB</h2>
+            </header>
+            <p>MATLAB is fun, but now I'm all in in Julia.</p>
+            <p></p>
 
-										<h3>Pabel Data</h3>
-										<p>Clever description.</p>
-										<pre><code> run cool code</code></pre>
+            <h3>Simulating a complex system</h3>
+            <p>
+              Complex system were introduce as a mathematical curiosity, that
+              later proves to be behind different procces in physics, biology
+              and social behaviour.<br />
+              When dealing with complex system we aren't able to arrive to a
+              closed form solution. Therefore, questions like: does the porcess
+              converges to an sationaty equilibrium? When it does? How are the
+              equilibrium properties? require simulations<br />
+              The code presented uses MATLAB for making those simulations.<br />
+              The simulations model voting patterns. Voters are placed in a
+              2-dimension matrix, each voter has to choose among three parties,
+              voters are heterogeneous in their preferences, every voter have a
+              prefered party, a 'not so bad' party, an a 'hated' party. Before
+              voting, voters can made small polls among their neighbourhood,
+              which are used for estimating the probability of each party for
+              winning. In summary, the neighbourhood infuence the expectations
+              of each households. If a household expects that her favourite
+              party would be last, she then changes her voting intention. That
+              is, is she would have to vote, she would vote her second best
+              option.<br />
+              Up to here, the model itself it is not 'complex'. But afeter every
+              voter actualized its voting intention they can conduct a new
+              survey, different voting intentions leads to different voting
+              expectation, that again leads to different voting intentions.
+            </p>
+            <div class="col-6 col-12-small">
+              <ul class="actions fit">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation"
+                    class="button primary fit"
+                    >Analitycal Documment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="coding_samples/R/data_manip_R.html"
+                    class="button fit"
+                    >Sample Code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation"
+                    class="button primary fit"
+                    >GitHub Repo (all scripts)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <p>
+              The image below summarizes the idea of the model, where each color
+              represents a party and each frame represents the voting intention
+              after another poll in the neighbourhood. (The size of the matrix
+              is low for ilustrative purpose, and represents an specific
+              parametrization).
+            </p>
+            <span class="image main">
+              <img src="coding_samples/matlab/votacion.gif" alt="" />
+            </span>
 
-<!--                        MATLAB										 -->
-										<header class="major">
-											<h2>MATLAB</h2>
-										</header>
-										<p>MATLAB is fun, but now I'm all in in Julia.<p>
+            <h3>Dynare</h3>
+            <p>
+              I used dynare for computing the IRFs to a shock over the ss of a
+              DSGE model.
+            </p>
+            <pre><code> run cool code</code></pre>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="button primary fit"
+                    >Model description (empty)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="button fit"
+                    >Sample Code (empty)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/"
+                    class="button primary fit"
+                    >GitHub Repo (empty)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <span class="image fit">
+              <img src="coding_samples/matlab/IRFs.png" alt="" />
+            </span>
 
-										<h3>Simulating a complex system</h3>
-										<p>Complex system were introduce as a mathematical curiosity,
-										that later proves to be behind different procces in physics,
-										biology and social behaviour.<br>
-										When dealing with complex system we aren't able to arrive to a
-										closed form solution. Therefore, questions like: does the
-										porcess converges to an sationaty	equilibrium? When it does?
-										How are the equilibrium properties? require simulations<br>
-										The code presented uses MATLAB for making those simulations.<br>
-										The simulations model voting patterns. Voters are placed in a
-										2-dimension matrix, each voter has to choose among three parties,
-										voters are heterogeneous in their preferences, every voter have
-										a prefered party, a 'not so bad' party, an a 'hated' party.
-										Before voting, voters can made small polls among their neighbourhood,
-										which are used for estimating the probability of each party
-										for winning. In summary, the neighbourhood infuence the expectations
-										of each households. If a household expects that her favourite
-										party would be last, she then changes her voting intention.
-										That is, is she would have to vote, she would vote her
-										second best option.<br>
-										Up to here, the model itself it is not 'complex'. But afeter every
-										voter actualized its voting intention they can conduct a new survey,
-										different voting intentions leads to different voting expectation,
-									  that again leads to different voting intentions.</p>
-										<div class="col-6 col-12-small">
-											<ul class="actions fit">
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation" class="button primary fit">Analitycal Documment</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="coding_samples/R/data_manip_R.html" class="button fit">Sample Code</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_R/tree/main/data_manipulation" class="button primary fit">GitHub Repo (all scripts)</a></li>
-											</ul>
-										</div>
-										<p> The image below summarizes the idea of the model, where each
-										color represents a party and each frame represents the voting
-										intention after another poll in the neighbourhood. (The size of the
-										matrix is low for ilustrative purpose, and represents an specific
-										parametrization).</p>
-										<span class="image main">
-											<img src="coding_samples/matlab/votacion.gif" alt="" />
-										</span>
+            <!--                        Julia										 -->
+            <header class="major">
+              <h2>Julia</h2>
+            </header>
+            <p>Julia is beautiful.</p>
+            <p></p>
 
-										<h3>Dynare</h3>
-										<p>I used dynare for computing the IRFs to a shock over the
-										ss of a DSGE model.</p>
-										<pre><code> run cool code</code></pre>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="#" class="button primary fit">Model description (empty)</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="#" class="button fit">Sample Code (empty)</a></li>
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/" class="button primary fit">GitHub Repo (empty)</a></li>
-											</ul>
-										</div>
-											<span class="image fit">
-												<img src="coding_samples/matlab/IRFs.png" alt="" />
-											</span>
+            <h3>Jupyterlab notes on VFI: Cake eating problem</h3>
+            <p>
+              I have been moving from MATLAB to Julia, for some projects. I am
+              not an expert (and not even close), but Julia turn out to be very
+              intuitive and similar to MATLAB<br />
+              The integration with Jupyter Notebook and Jupyter Lab, is great
+              for the early stage of developing a code, specially if there is a
+              mathematical model behind (since it allows markdown).<br />
+              In this example, still unfinished, I am writing a Jupyter Lab
+              file, in Julia for the tutorial lectures on Value Function
+              Iteration, that I will be giving next quearter.
+            </p>
+            <pre><code> run cool code</code></pre>
 
-<!--                        Julia										 -->
-										<header class="major">
-											<h2>Julia</h2>
-										</header>
-										<p>Julia is beautiful.<p>
+            <header class="major">
+              <h2>TikZ</h2>
+            </header>
+            <p>Elegant plots.</p>
+            <p></p>
 
-										<h3>Jupyterlab notes on VFI: Cake eating problem</h3>
-										<p>I have been moving from MATLAB to Julia, for some projects.
-										I am not an expert (and not even close), but Julia turn out
-										to be very intuitive and similar to MATLAB<br>
-									  The integration with Jupyter Notebook and Jupyter Lab, is great
-										for the early stage of developing a code, specially if there
-										is a mathematical model behind (since it allows markdown).<br>
-										In this example, still unfinished, I am writing a Jupyter Lab file,
-										in Julia for the tutorial lectures on Value Function Iteration,
-										that I will be giving next quearter.</p>
-										<pre><code> run cool code</code></pre>
+            <h3>Some Examples</h3>
+            <div class="box alt">
+              <div class="row gtr-50 gtr-uniform">
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/tikz/tikz1.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/tikz/tikz2.png" alt=""
+                  /></span>
+                </div>
+                <!-- Break -->
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/tikz/tikz3.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-6">
+                  <span class="image fit"
+                    ><img src="coding_samples/tikz/tikz4.png" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/coding_sample_tikz"
+                    class="button primary fit"
+                    >GitHub Repository</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
 
-										<header class="major">
-											<h2>TikZ</h2>
-										</header>
-										<p>Elegant plots.<p>
+      <!-- Barra Lateral -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Panel de búsqueda -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
 
-										<h3>Some Examples</h3>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="coding_samples/tikz/tikz1.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="coding_samples/tikz/tikz2.png" alt="" /></span></div>
-												<!-- Break -->
-												<div class="col-6"><span class="image fit"><img src="coding_samples/tikz/tikz3.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="coding_samples/tikz/tikz4.png" alt="" /></span></div>
-											</div>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="actions">
-												<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/nicotanzi/coding_sample_tikz" class="button primary fit">GitHub Repository</a></li>
-											</ul>
-										</div>
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="coding_sample.html">Coding Sample</a></li>
+              <li>
+                <span class="opener">Teaching</span>
+                <ul>
+                  <li><a href="#">Recursive Macroeconomics - UdeSA</a></li>
+                  <li><a href="#">Teoría Microeconómica - UCEMA</a></li>
+                  <li><a href="#">Econometría - UB</a></li>
+                  <li><a href="#">Economía II - UTDT</a></li>
+                  <li><a href="#">Microeconomía - USAL</a></li>
+                  <li><a href="#">Microeconomía Superior - USAL</a></li>
+                  <li><a href="#">Introducción a la Microeconomía - UCA</a></li>
+                  <li><a href="#">Microeconomía I - UBA</a></li>
+                  <li>
+                    <a href="#">Introducción a la Microeconomía - UdeSA</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Magister Thesis</a></li>
+              <li>
+                <span class="opener">Other Projects</span>
+                <ul>
+                  <li><a href="#">Gender Gap</a></li>
+                  <li><a href="#">A guide to HANK</a></li>
+                  <li><a href="#">Value Function Iteration in Julia</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
 
-									</section>
-								</div>
-							</div>
+          <!-- Contacto -->
+          <section>
+            <header class="major">
+              <h2>Contact info</h2>
+            </header>
+            <!-- <p>Some optional text.</p> -->
+            <ul class="contact">
+              <li class="icon solid fa-envelope">nico[.]tanzi[a]gmail[.]com</li>
+              <li class="icon solid fa-phone">+54 11 3619-xxxx</li>
+              <li class="icon solid fa-home">
+                Merlo, Buenos Aires<br />
+                Argentina
+              </li>
+            </ul>
+          </section>
 
-							<!-- Barra Lateral -->
-								<div id="sidebar">
-									<div class="inner">
+          <!-- Pie -->
+          <footer id="footer">
+            <p class="copyright">
+              Thanks for visiting this humble page! Have a nice day!
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
 
-										<!-- Panel de búsqueda -->
-											<section id="search" class="alt">
-												<form method="post" action="#">
-													<input type="text" name="query" id="query" placeholder="Search" />
-												</form>
-											</section>
-
-										<!-- Menu -->
-											<nav id="menu">
-												<header class="major">
-													<h2>Menu</h2>
-												</header>
-												<ul>
-													<li><a href="index.html">Homepage</a></li>
-													<li><a href="resume.html">Resume</a></li>
-													<li><a href="coding_sample.html">Coding Sample</a></li>
-													<li>
-														<span class="opener">Teaching</span>
-														<ul>
-															<li><a href="#">Recursive Macroeconomics - UdeSA</a></li>
-															<li><a href="#">Teoría Microeconómica - UCEMA</a></li>
-															<li><a href="#">Econometría - UB</a></li>
-															<li><a href="#">Economía II - UTDT</a></li>
-															<li><a href="#">Microeconomía - USAL</a></li>
-															<li><a href="#">Microeconomía Superior - USAL</a></li>
-															<li><a href="#">Introducción a la Microeconomía - UCA</a></li>
-															<li><a href="#">Microeconomía I - UBA</a></li>
-															<li><a href="#">Introducción a la Microeconomía - UdeSA</a></li>
-														</ul>
-													</li>
-													<li><a href="#">Magister Thesis</a></li>
-													<li>
-														<span class="opener">Other Projects</span>
-														<ul>
-															<li><a href="#">Gender Gap</a></li>
-															<li><a href="#">A guide to HANK</a></li>
-															<li><a href="#">Value Function Iteration in Julia</a></li>
-														</ul>
-													</li>
-												</ul>
-											</nav>
-
-										<!-- Contacto -->
-											<section>
-												<header class="major">
-													<h2>Contact info</h2>
-												</header>
-												<!-- <p>Some optional text.</p> -->
-												<ul class="contact">
-													<li class="icon solid fa-envelope">nico[.]tanzi[a]gmail[.]com</li>
-													<li class="icon solid fa-phone"> +54 11 3619-xxxx</li>
-													<li class="icon solid fa-home">Merlo, Buenos Aires<br />
-													Argentina</li>
-												</ul>
-											</section>
-
-										<!-- Pie -->
-											<footer id="footer">
-												<p class="copyright"> Thanks for visiting this humble page! Have a nice day!</p>
-											</footer>
-
-									</div>
-								</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
