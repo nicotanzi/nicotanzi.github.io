@@ -83,9 +83,104 @@
           </section>
 
           <!-- Content -->
-
-          <!-- R -->
           <section>
+            <!-- Python -->
+            <header class="major">
+              <h2>
+                <img
+                  src="images/python_logo.png"
+                  alt="Python Logo"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                  "
+                />
+                Python
+              </h2>
+            </header>
+            <p>
+              I’m a Python enthusiast with a knack for creating clever
+              solutions. My journey began with a passion for Data Science, and
+              Python quickly became my go-to language.
+            </p>
+
+            <h3>Hangman and Evil Hangman: Deploying with Flask</h3>
+            <p>
+              This is an example of clever usage of base Python and Flask. I
+              created a simple game with a clever twist and I deployed it with
+              Render to be available online.<br />
+              <br />
+              Hangman is a 2-player asymmetric game, in which a word-maker
+              creates a hidden word and a word-guesser tries to guess letters in
+              the word with the ultimate goal of guessing the word. In the
+              traditional pen and paper version of the game, the number of
+              guesses is limited by the number of strokes it makes to draw a
+              stick figure of a person. You can play Hangman by choosing the
+              game configuration and clicking on the "Start Game" button below.
+              Disable the evil mode to get used to the rules.<br />
+              <br />
+              However, I have implemented an adversarial word-maker that cheats
+              by choosing the word as late in the game as possible. For example,
+              if the word-guesser has found 5 of the 6 letters, DO-BLE, then
+              there are two words in English that satisfy these constraints:
+              double and doable, so regardless of what the guesser chooses next,
+              my program will indicate that the guess is incorrect.
+              <br /><br />
+              Furthermore, The program starts with all words of a given length.
+              Then, when a guess is made, the program responds so that the set
+              of possible words that remains is as large as possible. It splits
+              the set of words into: the set of words that do not contain the
+              letter; the set of words that contain the letter only in the first
+              position; the set of words that contain the letter only in the
+              second position; etc.; the set of words that contain the letter
+              only in the first and second positions; etc. Then, it selects the
+              largest of these sets. To play this mode, simply enable the evil
+              mode.
+            </p>
+            <!-- Embed Hangman Game -->
+            <div style="text-align: center; margin: 20px 0">
+              <iframe
+                src="https://online-hangman.onrender.com/"
+                style="border: none; width: 100%; height: 600px"
+                title="Hangman Game"
+              >
+              </iframe>
+            </div>
+
+            <!--
+            <h3>Computer Vision: Convolutions vs. Transformers</h3>
+            <p>Comparing two alternatives in pyTorch.</p>
+            <div class="col-6 col-12-small">
+              <ul class="actions">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/nicotanzi/"
+                    class="button fit"
+                    >Repo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="button primary fit"
+                    >Nothing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <h3>The U shape thing.</h3>
+            <p>Description of the U shape thing.</p>
+            <pre><code> run cool code</code></pre>
+            -->
+
+            <!-- R -->
             <header class="major">
               <h2>
                 <img
