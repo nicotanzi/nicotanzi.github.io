@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Nico Tanzi - Homepage</title>
+    <title>Nico Tanzi | Economist &amp; Data Scientist</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <meta
+      name="description"
+      content="Nico Tanzi, economist and data scientist. I help companies answer three questions with data: did it work, what comes next, and is it worth it."
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicolás Tanzi",
+        "alternateName": "Nico Tanzi",
+        "jobTitle": "Economist & Data Scientist",
+        "url": "https://nicotanzi.github.io/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
+          { "@type": "CollegeOrUniversity", "name": "Universidad de San Andrés" },
+          { "@type": "CollegeOrUniversity", "name": "Universidad de Buenos Aires" }
+        ],
+        "knowsAbout": [
+          "Causal inference",
+          "Time series forecasting",
+          "Economic evaluation",
+          "Machine learning",
+          "Econometrics",
+          "Credit risk modeling"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/nico-tanzi",
+          "https://github.com/nicotanzi"
+        ]
+      }
+    </script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -18,7 +54,7 @@
           <!-- Header -->
           <header id="header">
             <a href="index.html" class="logo"
-              ><strong>Nico Tanzi</strong> Homepage</a
+              ><strong>Nico Tanzi</strong> Economist &amp; Data Scientist</a
             >
             <ul class="icons">
               <li>
@@ -35,15 +71,6 @@
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
-              <!--
-			  <li>
-                <a
-                  href="https://www.instagram.com/tanzinicolas"
-                  class="icon brands fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-			  -->
             </ul>
           </header>
 
@@ -51,44 +78,51 @@
           <section id="banner">
             <div class="content">
               <header>
-                <h1>Hello, I'm Nico</h1>
-                <p>A Brief Introduction</p>
+                <h1>Economist &amp; Data Scientist</h1>
+                <p>
+                  I help companies answer three questions with data: did it
+                  work, what comes next, and is it worth it.
+                </p>
               </header>
               <p>
-                Hi, I’m Horacio Nicolás Tanzi, but you can call me Nico. I'm an
-                economist and data scientist based in Buenos Aires, Argentina. I
-                hold a master's in economics and am currently pursuing an online
-                Master’s in Data Science from the University of Texas at Austin.
+                Hi, I'm Nicolás Tanzi, but you can call me Nico. I have 7+
+                years in analytics and data science, 4+ of them in banking and
+                risk, and two master's degrees: one in Economics (Universidad de
+                San Andrés) and one in Data Science (The University of Texas at
+                Austin). I measure the impact of business decisions, forecast
+                what comes next, and put a value on the options, then take
+                those models to production with Python, SQL, Databricks, and
+                Spark.
               </p>
               <p>
-                With a background in macroeconomic consulting and expertise in
-                econometrics, time series analysis, machine learning, and deep
-                learning, I’ve applied my skills to projects ranging from
-                economic forecasting to machine learning financial models. I’m
-                passionate about solving complex problems by combining
-                economics, data, and technology.
-              </p>
-              <p>
-                Feel free to connect with me on
-                <a href="https://www.linkedin.com/in/nico-tanzi/?locale=en_US"
-                  >LinkedIn</a
-                >, explore my
-                <a href="https://nicotanzi.github.io/resume.html">web-resume</a
-                >, or check out my programming work on the
-                <a href="https://nicotanzi.github.io/coding_sample.html"
-                  >Coding Sample</a
-                >
-                page.
-                <!--<a href="https://github.com/nicotanzi">GitHub</a>.-->
+                <strong>Based in Buenos Aires (GMT-3), US-friendly hours.</strong>
+                Open to remote full-time roles and contract work.
               </p>
               <ul class="actions">
                 <li>
-                  <a href="CV\Tanzi CV EN.pdf" class="button big"
-                    >CV in english</a
+                  <a
+                    class="button big primary js-email"
+                    data-user="nico.tanzi"
+                    data-domain="gmail.com"
+                    >Email me</a
                   >
                 </li>
                 <li>
-                  <a href="CV\Tanzi CV ES.pdf" class="button big"
+                  <a
+                    href="https://www.linkedin.com/in/nico-tanzi/"
+                    class="button big"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+              <ul class="actions">
+                <li>
+                  <a href="CV/Nicolas_Tanzi_CV_EN.pdf" class="button"
+                    >CV in English</a
+                  >
+                </li>
+                <li>
+                  <a href="CV/Nicolas_Tanzi_CV_ES.pdf" class="button"
                     >CV en español</a
                   >
                 </li>
@@ -99,86 +133,137 @@
             </span>
           </section>
 
-          <!-- Información -->
+          <!-- What I do -->
           <section>
             <header class="major">
-              <h2>Key Highlights</h2>
+              <h2>What I do</h2>
             </header>
             <div class="features">
               <article>
-                <span class="icon solid fa-user-tie"></span>
+                <span class="icon solid fa-check-circle"></span>
                 <div class="content">
-                  <h3>Current Position</h3>
+                  <h3>Did it work?</h3>
                   <p>
-                    I am a Model Validator at
-                    <a href="https://kdoden.com/about/">KDOA</a>. I scrutinize
-                    models with great rigor, perform backtesting to evaluate
-                    their accuracy, and compare them against benchmark models I
-                    develop. Additionally, I conduct sensitivity analysis to
-                    stress-test the model and observe how it responds. Finally,
-                    every validation ends with a document describing the model,
-                    presenting the analysis, and raising the issues found, which
-                    involves report writing, smoothness to communicate the
-                    findings as well as openness to hear the model owner's
-                    feedback.
+                    <strong>Causal inference and experiments.</strong> For a
+                    leading Latin American beverage bottler, I set the
+                    priorities of a causal evaluation engine that measures the
+                    sales impact of a commercial initiative every two weeks for
+                    1.5M+ customers (700k in Mexico and 800k in Brazil), using
+                    Matrix Completion for Causal Panels with Causal Forest as
+                    the benchmark. I also measure the impact of cross-company
+                    sales initiatives with difference-in-differences, synthetic
+                    control, instrumental variables, and causal forests (results
+                    were escalated to the CEO), and I design experiments:
+                    treatment and control groups, sample sizes, and
+                    randomization.
                   </p>
                 </div>
               </article>
               <article>
-                <span class="icon solid fa-graduation-cap"></span>
+                <span class="icon solid fa-chart-line"></span>
                 <div class="content">
-                  <h3>Academic Background</h3>
+                  <h3>What comes next?</h3>
                   <p>
-                    I hold a bachelor's degree in economics from the University
-                    of Buenos Aires, where I also served as a Teaching Assistant
-                    for Microeconomics I, Microeconomics II, and Statistics II.
-                    I earned a master's degree in economics from the University
-                    of San Andrés, where my Recursive Macroeconomics professor
-                    took me as his research assistant. Currently, I am pursuing
-                    a Master’s in Data Science online from the University of
-                    Texas at Austin, having successfully completed 5 out of 10
-                    subjects, including Regressions, Data Structures &
-                    Algorithms, Statistics & Probability, Machine Learning, and
-                    Deep Learning. These courses have required extensive Python
-                    coding, and I am on track to complete the program in 2025.
+                    <strong>Time series and forecasting.</strong> At Banco
+                    Santander I built time series forecasting models along with
+                    probability of default and loss given default models for
+                    banking risk, using SARIMA, cointegration with error
+                    correction, economic cycle indicators, and structural break
+                    diagnostics. At KDOA I validated forecasting models for
+                    banks, and I started my career building the time series
+                    models behind FIEL's quarterly Macroeconomic Forecast.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-balance-scale"></span>
+                <div class="content">
+                  <h3>Is it worth it?</h3>
+                  <p>
+                    <strong>Economic evaluation with data and models.</strong>
+                    I design demand elasticity models that combine
+                    microeconomics, causal inference, and large transactional
+                    databases. I validated 50+ predictive and decision models
+                    for 10+ banks, some of the largest in the world, and
+                    presented findings to the CFO of a major U.S. bank. I also
+                    built a value at risk model that values a major Argentine
+                    bank's assets and liabilities under configurable scenarios.
+                    My economics master's thesis won an award from the Central
+                    Bank of Argentina.
                   </p>
                 </div>
               </article>
               <article>
                 <span class="icon solid fa-laptop-code"></span>
                 <div class="content">
-                  <h3>Coding Skills</h3>
+                  <h3>How I deliver</h3>
                   <p>
-                    Coding has always been a passion of mine. I taught myself
-                    HTML and CSS at fifteen, creating simple web pages. During
-                    my economics studies, I mastered R and Julia for
-                    econometrics and macroeconomic models. Later, I focused on
-                    Python and Data Science, which are now my primary tools. I
-                    also have experience with SAS, SQL, and LaTeX, particularly
-                    excelling with TikZ plots.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span class="icon fa-smile"></span>
-                <div class="content">
-                  <h3>Personal Insights</h3>
-                  <p>
-                    I'm 31 years old, living and born in Argentina. I enjoy
-                    running, spending time with friends and my girlfriend,
-                    caring for my many plants, and cooking (especially making
-                    asados, is a passion of mine). When time permits, I love
-                    exploring Patagonia's forests and lakes.<br />
-                    <br />
-                    Me and my girlfriend share our home with a dog and a cat,
-                    both of whom have unique stories about how they ended up
-                    with us. My curiosity drives me to constantly learn new
-                    things, and I am motivated by the desire for financial
-                    security and preparedness for life's uncertainties.
+                    <strong>Code and AI.</strong> I write advanced Python and
+                    SQL, build data pipelines and models in Databricks with
+                    PySpark and Spark SQL, and follow MLOps practices with Git
+                    and Azure DevOps. I design agentic workflows with Claude
+                    Code, where an orchestrator delegates work to parallel
+                    subagents under human approval, and I'm preparing the Claude
+                    Certified Architect - Professional certification (expected
+                    December 2026).
                   </p>
                 </div>
               </article>
             </div>
+          </section>
+
+          <!-- Background -->
+          <section>
+            <header class="major">
+              <h2>Background</h2>
+            </header>
+            <div class="features">
+              <article>
+                <span class="icon solid fa-graduation-cap"></span>
+                <div class="content">
+                  <h3>Education</h3>
+                  <p>
+                    Master of Science in Data Science, The University of Texas
+                    at Austin (March 2026). Master's in Economics, Universidad de San
+                    Andrés, with an award-winning thesis. Bachelor's in
+                    Economics, Universidad de Buenos Aires.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-chalkboard-teacher"></span>
+                <div class="content">
+                  <h3>Teaching</h3>
+                  <p>
+                    I taught statistics, econometrics, microeconomics, and
+                    macroeconomics at seven Argentine universities, in
+                    undergraduate and master's programs. Explaining technical
+                    results to people who don't work with models is still part
+                    of my job.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="resume.html" class="button">See full resume</a></li>
+            </ul>
+          </section>
+
+          <!-- Personal -->
+          <section>
+            <header class="major">
+              <h2>Personal Insights</h2>
+            </header>
+            <p>
+              I was born and live in Argentina. I enjoy running, spending time
+              with friends and my girlfriend, caring for my many plants, and
+              cooking (making asados is a passion of mine). When time permits,
+              I love exploring Patagonia's forests and lakes. My girlfriend and
+              I share our home with a dog and a cat, each with its own story of
+              how it ended up with us. My curiosity drives me to keep learning
+              new things, and I'm motivated by financial security and being
+              prepared for life's uncertainties.
+            </p>
           </section>
         </div>
       </div>
@@ -210,47 +295,30 @@
                       >Recursive Macroeconomics - UdeSA</a
                     >
                   </li>
-                  <li><a href="#">Econometría - UB</a></li>
-                  <li><a href="#">Microeconomía - USAL</a></li>
-                  <li><a href="#">Microeconomía Superior - USAL</a></li>
-                  <li><a href="#">Teoría Microeconómica - UCEMA</a></li>
-                  <!--
-                  <li><a href="#">Economía II - UTDT</a></li>
-                  <li><a href="#">Microeconomía Superior - USAL</a></li>
-                  <li><a href="#">Introducción a la Microeconomía - UCA</a></li>
-                  <li><a href="#">Microeconomía I - UBA</a></li>
-                  <li>
-                    <a href="#">Introducción a la Microeconomía - UdeSA</a>
-                  </li>
-                  -->
                 </ul>
               </li>
-              <!--
-              <li><a href="#">Magister Thesis</a></li>
-              <li>
-                <span class="opener">Other Projects</span>
-                <ul>
-                  <li><a href="#">Gender Gap</a></li>
-                  <li><a href="#">A guide to HANK</a></li>
-                  <li><a href="#">Value Function Iteration in Julia</a></li>
-                </ul>
-              </li>
-              -->
             </ul>
           </nav>
 
           <!-- Contacto -->
           <section>
             <header class="major">
-              <h2>Contact info</h2>
+              <h2>Contact</h2>
             </header>
-            <!-- <p>Some optional text.</p> -->
+            <p>Open to remote full-time roles and contract work.</p>
             <ul class="contact">
-              <li class="icon solid fa-envelope">nico[.]tanzi[a]gmail[.]com</li>
-              <li class="icon solid fa-phone">+54 11 3619-0894</li>
+              <li class="icon solid fa-envelope">
+                <a
+                  class="js-email"
+                  data-user="nico.tanzi"
+                  data-domain="gmail.com"
+                  data-show
+                  >nico.tanzi [at] gmail [dot] com</a
+                >
+              </li>
               <li class="icon solid fa-home">
-                Ciudad Autónoma de Buenos Aires,<br />
-                Argentina
+                Buenos Aires, Argentina<br />
+                GMT-3, US-friendly hours
               </li>
             </ul>
           </section>
@@ -269,5 +337,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>

@@ -4,13 +4,17 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
   <head>
-    <title>Nico Tanzi - Resume</title>
+    <title>Resume | Nico Tanzi</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Resume of Nico Tanzi, economist and data scientist: causal inference, time series forecasting, and economic evaluation at Mutt Data, Banco Santander, and Kevin D. Oden & Associates."
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
@@ -23,7 +27,7 @@
           <!-- Header -->
           <header id="header">
             <a href="index.html" class="logo"
-              ><strong>Nico Tanzi</strong> Homepage</a
+              ><strong>Nico Tanzi</strong> Economist &amp; Data Scientist</a
             >
             <ul class="icons">
               <li>
@@ -40,15 +44,6 @@
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
-              <!--
-              <li>
-                <a
-                  href="https://www.instagram.com/tanzinicolas"
-                  class="icon brands fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-              -->
             </ul>
           </header>
 
@@ -57,38 +52,39 @@
             <div class="content">
               <header>
                 <h1>Resume</h1>
-                <p>About me</p>
+                <p>
+                  I help companies answer three questions with data: did it
+                  work, what comes next, and is it worth it.
+                </p>
               </header>
               <p>
-                Hi, I’m Nicolás Tanzi, an economist and data scientist based in
-                Buenos Aires, Argentina. I hold a master's in economics ,and
-                currently, I’m pursuing a Master’s in Data Science online from
-                the University of Texas at Austin.
+                I'm Nicolás Tanzi, an economist and data scientist based in
+                Buenos Aires, Argentina. I have 7+ years in analytics and data
+                science, 4+ of them in banking and risk. I specialize in causal
+                inference, time series forecasting, and economic evaluation
+                based on data and models, and I take that work to production
+                with Python, SQL, Databricks, and Spark.
               </p>
               <p>
-                With a background in macroeconomic consulting and expertise in
-                econometrics, time series analysis, machine learning, and deep
-                learning, I’ve applied my skills to projects ranging from
-                economic forecasts to machine-learning financial models. I’m
-                passionate about solving complex problems by combining
-                economics, data, and technology.
-              </p>
-              <p>
-                Feel free to connect with me on
-                <a href="https://www.linkedin.com/in/nico-tanzi/?locale=en_US"
-                  >LinkedIn</a
-                >
-                or check out my work on
-                <a href="https://github.com/nicotanzi">GitHub</a>.
+                <strong>Based in Buenos Aires (GMT-3), US-friendly hours.</strong>
+                Open to remote full-time roles and contract work.
               </p>
               <ul class="actions">
                 <li>
-                  <a href="CV\Tanzi CV EN.pdf" class="button big"
-                    >CV in english</a
+                  <a
+                    class="button big primary js-email"
+                    data-user="nico.tanzi"
+                    data-domain="gmail.com"
+                    >Email me</a
                   >
                 </li>
                 <li>
-                  <a href="CV\Tanzi CV ES.pdf" class="button big"
+                  <a href="CV/Nicolas_Tanzi_CV_EN.pdf" class="button big"
+                    >CV in English</a
+                  >
+                </li>
+                <li>
+                  <a href="CV/Nicolas_Tanzi_CV_ES.pdf" class="button big"
                     >CV en español</a
                   >
                 </li>
@@ -99,6 +95,173 @@
             </span>
           </section>
 
+          <!-- Experiencia -->
+          <section>
+            <header class="major">
+              <h2>Experience</h2>
+            </header>
+            <div class="features">
+              <article>
+                <span class="image"
+                  ><img src="images/logo_mutt.svg" alt="Mutt Data"
+                /></span>
+                <div class="content">
+                  <h3>Senior Data Scientist<br />Mutt Data</h3>
+                  <p>
+                    November 2025 - Present. Client: a leading Latin American
+                    beverage bottler.
+                  </p>
+                  <ul>
+                    <li>
+                      Set the build priorities of a causal evaluation engine
+                      for the client's commercial initiatives, ranking features
+                      by business value and technical complexity. The engine
+                      measures sales impact every two weeks for 1.5M+ customers
+                      (700k in Mexico and 800k in Brazil), with Matrix
+                      Completion for Causal Panels as the main model and Causal
+                      Forest as the benchmark.
+                    </li>
+                    <li>
+                      Estimate the impact of cross-company sales initiatives
+                      with causal forests, LightGBM-based causal models,
+                      synthetic control, difference-in-differences, and
+                      instrumental variables. Results were presented to the
+                      lead Growth Manager and escalated to the CEO.
+                    </li>
+                    <li>
+                      Design and analyze experiments to boost sales, customer
+                      digitalization, and satisfaction: treatment and control
+                      groups, sample sizes, sampling and randomization, and
+                      satisfaction surveys.
+                    </li>
+                    <li>
+                      Design demand elasticity models that combine
+                      microeconomics, causal inference, and large
+                      transactional databases.
+                    </li>
+                    <li>
+                      Build data pipelines and models in Databricks with
+                      PySpark, Spark SQL, and advanced SQL, using Databricks
+                      Connect, shared Python libraries, MLOps practices, Git,
+                      and Azure DevOps.
+                    </li>
+                    <li>
+                      Designed an agentic development workflow on Claude Code:
+                      an orchestrator delegates work to parallel subagents (one
+                      per Git worktree or Jira ticket) under human approval
+                      gates, supported by custom skills.
+                    </li>
+                    <li>
+                      Mentor two junior data scientists, interview candidates,
+                      and prioritize a high volume of stakeholder requests.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_santander.png" alt="Banco Santander"
+                /></span>
+                <div class="content">
+                  <h3>Senior Data Scientist<br />Banco Santander</h3>
+                  <p>March 2025 - November 2025. Fixed-term contract.</p>
+                  <ul>
+                    <li>
+                      Developed probability of default (PD) models with
+                      XGBoost, along with loss given default (LGD) and time
+                      series forecasting models for banking risk.
+                    </li>
+                    <li>
+                      Built and analyzed logistic regression, LASSO, Ridge,
+                      SARIMA, and cointegration models with error correction
+                      mechanisms, along with economic cycle indicators and
+                      structural break diagnostics.
+                    </li>
+                    <li>
+                      Prepared and analyzed portfolio data with Python, SQL,
+                      Spark, and AWS to estimate, evaluate, and document
+                      models.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_kdoa.png" alt="Kevin D. Oden & Associates"
+                /></span>
+                <div class="content">
+                  <h3>
+                    Model Validator - Quant Analyst<br />Kevin D. Oden &amp;
+                    Associates
+                  </h3>
+                  <p>April 2022 - March 2025.</p>
+                  <ul>
+                    <li>
+                      Validated 50+ predictive and decision models for 10+
+                      banks, including some of the largest in the world:
+                      probability of default, fraud detection, securitization,
+                      hedging, and time series forecasting.
+                    </li>
+                    <li>
+                      Performed backtesting, stress testing, sensitivity
+                      analysis, benchmarking, and challenger model development.
+                    </li>
+                    <li>
+                      Developed and enhanced banking models, designed
+                      monitoring frameworks, wrote model documentation, and
+                      advised on annual review strategies.
+                    </li>
+                    <li>
+                      Presented findings and recommendations to senior
+                      executives, including the CFO of a major U.S. bank.
+                    </li>
+                    <li>Led and mentored two junior analysts.</li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_beex.png" alt="Beex"
+                /></span>
+                <div class="content">
+                  <h3>Financial Model Developer<br />Beex</h3>
+                  <p>January 2018 - February 2019.</p>
+                  <ul>
+                    <li>
+                      Developed a value at risk (VaR) model in SAS for a major
+                      Argentine bank.
+                    </li>
+                    <li>
+                      The model projects the cash flows of every asset and
+                      liability in the portfolio and discounts them under
+                      interest rate curves, scenarios, and assumptions that
+                      users configure through an interface.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_fiel.jpg" alt="FIEL"
+                /></span>
+                <div class="content">
+                  <h3>
+                    Statistical Assistant<br />FIEL - Macroeconomic Consultancy
+                  </h3>
+                  <p>October 2016 - December 2017.</p>
+                  <ul>
+                    <li>
+                      Built time series models for the FIEL Macroeconomic
+                      Forecast, a quarterly report of macroeconomic and sector
+                      projections.
+                    </li>
+                    <li>Data entry, data visualization, and report writing.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
           <!-- Educacion -->
           <section>
             <header class="major">
@@ -107,142 +270,199 @@
             <div class="features">
               <article>
                 <span class="image"
-                  ><img src="images/logo_uta.png" alt=""
+                  ><img src="images/logo_uta.png" alt="UT Austin"
                 /></span>
                 <div class="content">
                   <h3>
-                    Master in Data Sceince<br />The University of Texas at
-                    Austin
+                    Master of Science in Data Science<br />The University of
+                    Texas at Austin
                   </h3>
-                  <p>2024 - present.</p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_udesa4.png" alt=""
-                /></span>
-                <div class="content">
-                  <h3>Master’s in Economics<br />Universidad de San Andrés</h3>
                   <p>
-                    2019 - 2020.<br />Average grades 8.<br />Teaching assistant
-                    in Recursive Macroeconomics. <br />My master's thesis was
-                    awarded first prize in Economics Research by the Argentine
-                    Central Bank in the Young Professionals Category.
+                    2024 - March 2026. Completed.<br />Coursework: Machine Learning,
+                    Deep Learning I and II, Natural Language Processing,
+                    Advanced Probabilistic Methods, Probability &amp;
+                    Statistics, Regressions, Data Structures &amp; Algorithms,
+                    Data Science Foundations, Data Visualization.<br />Diploma
+                    verifiable at
+                    <a
+                      href="https://registrar.utexas.edu/services/cediploma/cediploma-validation"
+                      >UT Austin CeDiploma</a
+                    >
+                    (code 26VZ-2UJM-H7IZ).
                   </p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_uba.png" alt=""
+                  ><img src="images/logo_udesa4.png" alt="Universidad de San Andrés"
+                /></span>
+                <div class="content">
+                  <h3>Master's in Economics<br />Universidad de San Andrés</h3>
+                  <p>
+                    2019.<br />Average grade: 8/10.<br />Research assistant to
+                    Damián Pierri.<br />My thesis, "Inflación y riesgo en las
+                    decisiones de inversión de los hogares" (Inflation and Risk
+                    in Household Investment Decisions), won First Prize (shared)
+                    in the Young Professionals category of the Central Bank of
+                    Argentina's 16th Dr. Raúl Prebisch Economic Research Award
+                    (2024).
+                  </p>
+                  <ul class="actions stacked">
+                    <li>
+                      <a
+                        href="publications/Inflacion-y-riesgo-en-las-decisiones-de-inversion-de-los-hogares.pdf"
+                        class="button small"
+                        download
+                        >Thesis (PDF, Spanish)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.bcra.gob.ar/noticias/el-bcra-anuncia-los-trabajos-ganadores-del-premio-prebisch-2024/"
+                        class="button small"
+                        >BCRA announcement</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_uba.png" alt="Universidad de Buenos Aires"
                 /></span>
                 <div class="content">
                   <h3>
-                    Undergraduate Degree in Economics<br />Universidad de Buenos
+                    Bachelor's Degree in Economics<br />Universidad de Buenos
                     Aires
                   </h3>
                   <p>
-                    2013-2018<br />Average grades 8.<br />Teaching assistant in:
-                    Microeconomics 1 and 2, and in Statistics 2
+                    2013 - 2018.<br />Average grade: 8/10.<br />Teaching
+                    assistant in Microeconomics I and II and Statistics II.
                   </p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_uca.png" alt=""
+                  ><img src="images/logo_uca.png" alt="Universidad Católica Argentina"
                 /></span>
                 <div class="content">
                   <h3>Law<br />Universidad Católica Argentina</h3>
                   <p>
-                    2011-2012<br />Abandoned<br />Volunteer teacher at “Villa
-                    1.11.14”. Coordinator of the charity project in “Barrio los
-                    Piletones”
+                    2011 - 2013. Not completed.<br />Volunteer teacher at Villa
+                    1-11-14 (2012) and coordinator of the charity project in
+                    Barrio Los Piletones (2013).
                   </p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_ima.png" alt=""
+                  ><img src="images/logo_ima.png" alt="Instituto Modelo Almafuerte"
                 /></span>
                 <div class="content">
                   <h3>Instituto Modelo Almafuerte de Merlo</h3>
                   <p>
-                    Finished in 2010.<br />School representant at the
-                    Argentinian Math Olimpyad.
+                    Graduated in 2010.<br />Represented the school at the
+                    Argentine Mathematical Olympiad.
                   </p>
                 </div>
               </article>
             </div>
           </section>
 
-          <!-- Trabajo de Consultoría -->
+          <!-- Certificaciones y proyectos -->
           <section>
             <header class="major">
-              <h2>Economic and Financial Consulting Expirience</h2>
+              <h2>Certifications and Projects</h2>
             </header>
             <div class="features">
               <article>
-                <span class="image"
-                  ><img src="images/logo_kdoa.png" alt=""
-                /></span>
+                <span class="icon solid fa-certificate"></span>
                 <div class="content">
-                  <h3>Kevin D. Oden & Associates</h3>
-                  <p>
-                    Currently, I am Model Validator at
-                    <a href="https://kdoden.com/about/">KDOA</a>. I scrutinize
-                    models with great rigor, perform backtesting to evaluate
-                    their accuracy, and compare them against benchmark models
-                    that I develop. Additionally, I conduct sensitivity analyses
-                    to stress-test the models and observe their responses. Each
-                    validation concludes with a comprehensive document that
-                    describes the model, presents the analyses, and highlights
-                    the issues found. This process involves report writing,
-                    effective communication of findings, and openess to feedback
-                    from model owners.
-                  </p>
+                  <h3>Claude Certified Architect - Professional (CCA-P)</h3>
+                  <p>Anthropic. Expected December 2026.</p>
                 </div>
               </article>
               <article>
-                <span class="image"
-                  ><img src="images/logo_beex.png" alt=""
-                /></span>
+                <span class="icon solid fa-robot"></span>
                 <div class="content">
-                  <h3>Beex</h3>
-                  <p>
-                    2018. Risk Modeler.<br />
-                    I developed a risk model for Banco Hipotecario in SAS
-                    programming.<br />
-                    The model loads the bank's portfolio and, for each
-                    user-customized scenario, projects cash flows for every
-                    asset and liability according to the scenario parameters.
-                    These cash flows are then discounted using an interest rate
-                    curve associated with the scenario. This model allows for
-                    the measurement of the bank portfolio's value under specific
-                    scenarios. Additionally, the variability among scenarios
-                    allows to estimate the risk of the portfolio.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_fiel.jpg" alt=""
-                /></span>
-                <div class="content">
-                  <h3>
-                    Fundación de Investigaciones Económicas Latinoamericanas
-                  </h3>
-                  <p>
-                    2017. Statistical Assistant.<br />My job was focused on the
-                    FIEL Macroeconomic Forecasts. The Main tasks included data
-                    entry, data visualization, and report writing.<br />
-                    This role required proficiency in Excel, EViews, and STATA,
-                    as well as the ability to adapt to the constantly changing
-                    formats of macroeconomic data and the dynamic Argentinian
-                    economy, providing me with invaluable learning experiences
-                    and deepening my passion for economic analysis.
-                  </p>
+                  <h3>Agentic Second Brain</h3>
+                  <p>Personal project. November 2025 - Present.</p>
+                  <ul>
+                    <li>
+                      Multi-agent system built with Claude Code and Codex on an
+                      Obsidian knowledge base: an orchestrator coordinates
+                      specialized subagents with explicit permissions, human
+                      approval gates, and persistent worklogs.
+                    </li>
+                    <li>
+                      10+ custom agent skills (task management, email
+                      processing, project coaching, ticket synchronization,
+                      skill authoring), several with evaluation sets.
+                    </li>
+                    <li>
+                      Integrations through MCP and APIs (Jira, Gmail, Google
+                      Calendar, Azure DevOps, speech-to-text) with Python
+                      scripts, hooks, and unit tests.
+                    </li>
+                  </ul>
                 </div>
               </article>
             </div>
+          </section>
+
+          <!-- Habilidades -->
+          <section>
+            <header class="major">
+              <h2>Skills</h2>
+            </header>
+            <ul>
+              <li>
+                <strong>Causal inference and statistics:</strong> Matrix
+                Completion for Causal Panels, difference-in-differences,
+                synthetic control, causal forests, instrumental variables,
+                experimental design, hypothesis testing, demand elasticity.
+              </li>
+              <li>
+                <strong>Time series and econometrics:</strong> forecasting,
+                SARIMA, cointegration, error correction models, structural
+                breaks.
+              </li>
+              <li>
+                <strong>Machine learning:</strong> LightGBM, XGBoost, logistic
+                regression, LASSO, Ridge, model validation, backtesting,
+                benchmarking, challenger models, model monitoring, MLOps.
+              </li>
+              <li>
+                <strong>Finance and risk:</strong> probability of default, loss
+                given default, fraud detection, value at risk, asset and
+                liability cash flows, interest rate curves, stress testing,
+                sensitivity analysis.
+              </li>
+              <li>
+                <strong>Data platforms:</strong> Databricks (PySpark, Spark
+                SQL, Databricks Connect), Spark, AWS SageMaker, Azure DevOps,
+                Git, Jira.
+              </li>
+              <li>
+                <strong>AI and LLMs:</strong> agentic systems, multi-agent
+                orchestration, agent skills, Model Context Protocol (MCP),
+                prompt engineering, human-in-the-loop design, Claude Code,
+                Codex.
+              </li>
+              <li>
+                <strong>Programming:</strong> Python (advanced), SQL
+                (advanced), R, SAS, Julia, VBA, MATLAB, Stata, LaTeX, HTML,
+                CSS.
+              </li>
+              <li>
+                <strong>Libraries:</strong> pandas, NumPy, SciPy, scikit-learn,
+                statsmodels, PySpark, PyTorch, Matplotlib, Plotly, ggplot2,
+                tidyverse, tidymodels.
+              </li>
+              <li>
+                <strong>Languages:</strong> Spanish (native), English (fluent).
+              </li>
+            </ul>
           </section>
 
           <!-- Docencia -->
@@ -250,109 +470,121 @@
             <header class="major">
               <h2>Teaching Experience</h2>
             </header>
+            <p>
+              May 2020 - December 2022. Statistics, econometrics,
+              microeconomics, and macroeconomics in undergraduate and master's
+              programs at seven universities.
+            </p>
             <div class="features">
               <article>
                 <span class="image"
-                  ><img src="images/logo_ucema.png" alt=""
-                /></span>
-                <div class="content">
-                  <h3>Microeconomics<br />Universidad del CEMA</h3>
-                  <p>2021 - 2022. Two courses. Lab instructor.</p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_utdt.png" alt=""
+                  ><img src="images/logo_udesa4.png" alt="Universidad de San Andrés"
                 /></span>
                 <div class="content">
                   <h3>
-                    Economic II (for political science)<br />Universidad
-                    Torcuato Di Tella
+                    Dynamic Macroeconomics (Master's) and Introductory
+                    Microeconomics<br />Universidad de San Andrés
                   </h3>
-                  <p>2021. One course. Lab instructor.</p>
+                  <p>Teaching assistant.</p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_uca.png" alt=""
+                  ><img src="images/logo_usal.jpg" alt="Universidad del Salvador"
+                /></span>
+                <div class="content">
+                  <h3>
+                    Microeconomics I and II<br />Universidad del Salvador
+                  </h3>
+                  <p>Lecturer.</p>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_ub.jpg" alt="Universidad de Belgrano"
+                /></span>
+                <div class="content">
+                  <h3>Econometrics<br />Universidad de Belgrano</h3>
+                  <p>Lecturer and teaching assistant.</p>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_uba.png" alt="Universidad de Buenos Aires"
+                /></span>
+                <div class="content">
+                  <h3>Microeconomics I<br />Universidad de Buenos Aires</h3>
+                  <p>Teaching assistant.</p>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_ucema.png" alt="Universidad del CEMA"
+                /></span>
+                <div class="content">
+                  <h3>Microeconomics I<br />Universidad del CEMA</h3>
+                  <p>Teaching assistant.</p>
+                </div>
+              </article>
+              <article>
+                <span class="image"
+                  ><img src="images/logo_uca.png" alt="Universidad Católica Argentina"
                 /></span>
                 <div class="content">
                   <h3>
                     Introductory Microeconomics and Introductory
                     Macroeconomics<br />Universidad Católica Argentina
                   </h3>
-                  <p>2021 - 2023. Three courses. Lab instructor.</p>
+                  <p>Teaching assistant.</p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_usal.jpg" alt=""
+                  ><img src="images/logo_utdt.png" alt="Universidad Torcuato Di Tella"
                 /></span>
                 <div class="content">
                   <h3>
-                    Microeconomics & Advanced Microeconomics<br />Universidad
-                    del Salvador
+                    Introductory Macroeconomics<br />Universidad Torcuato Di
+                    Tella
                   </h3>
+                  <p>Teaching assistant.</p>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-user-graduate"></span>
+                <div class="content">
+                  <h3>Private Tutor<br />iMath</h3>
                   <p>
-                    2021. Two courses in Micro 1. One course in Micro 2.
-                    Lecturer and lab instructor.
+                    June 2018 - February 2020. Microeconomics, macroeconomics,
+                    and statistics for university students.
                   </p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_ub.jpg" alt=""
-                /></span>
-                <div class="content">
-                  <h3>Econometrics</h3>
-                  <p>2020 - 2021. One course. Lecturer and lab instructor.</p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_uba.png" alt=""
-                /></span>
-                <div class="content">
-                  <h3>Microeconomics 1<br />Universidad de Buenos Aires</h3>
-                  <p>2015 - 2022. One course. Lab instructor.</p>
-                </div>
-              </article>
-              <article>
-                <span class="image"
-                  ><img src="images/logo_udesa4.png" alt=""
-                /></span>
-                <div class="content">
-                  <h3>
-                    Introductory Microeconomics<br />Universidad de San Andrés
-                  </h3>
-                  <p>2020. Two courses. Lab instructor.</p>
                 </div>
               </article>
             </div>
           </section>
 
-          <!-- Other Working Expirience -->
+          <!-- Other Work Experience -->
           <section>
             <header class="major">
-              <h2>Other Working Expirience</h2>
+              <h2>Other Work Experience</h2>
             </header>
             <div class="features">
               <article>
                 <span class="image"
-                  ><img src="images/logo_wiki.jpg" alt=""
+                  ><img src="images/logo_wiki.jpg" alt="Wikimedia Argentina"
                 /></span>
                 <div class="content">
                   <h3>Administrative Manager<br />Wikimedia Argentina</h3>
-                  <p>2019.</p>
+                  <p>2019 - 2020.</p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/logo_sagat.jpg" alt=""
+                  ><img src="images/logo_sagat.jpg" alt="Sagat Deportes"
                 /></span>
                 <div class="content">
                   <h3>Administrative Assistant<br />Sagat Deportes</h3>
-                  <p>2015-2017. (Sports indumentary retailer).</p>
+                  <p>2015 - 2017. Sportswear retailer.</p>
                 </div>
               </article>
               <article>
@@ -361,18 +593,18 @@
                 /></span>
                 <div class="content">
                   <h3>
-                    Conssortium Administrator<br />Conssortium of Junin st 547
+                    Building Administrator<br />Condominium at Junín St. 547
                   </h3>
-                  <p>2016-2017</p>
+                  <p>2016 - 2017.</p>
                 </div>
               </article>
               <article>
                 <span class="image"
-                  ><img src="images/agencia2.jpg" alt=""
+                  ><img src="images/agencia2.jpg" alt="Agencias Ruben"
                 /></span>
                 <div class="content">
                   <h3>Manager<br />Agencias Ruben</h3>
-                  <p>2012-2013. (Lottery retailer).</p>
+                  <p>2012 - 2013. Lottery retailer.</p>
                 </div>
               </article>
             </div>
@@ -407,56 +639,37 @@
                       >Recursive Macroeconomics - UdeSA</a
                     >
                   </li>
-                  <li><a href="#">Econometría - UB</a></li>
-                  <li><a href="#">Microeconomía - USAL</a></li>
-                  <li><a href="#">Microeconomía Superior - USAL</a></li>
-                  <li><a href="#">Teoría Microeconómica - UCEMA</a></li>
-                  <!--
-                  <li><a href="#">Economía II - UTDT</a></li>
-                  <li><a href="#">Microeconomía Superior - USAL</a></li>
-                  <li><a href="#">Introducción a la Microeconomía - UCA</a></li>
-                  <li><a href="#">Microeconomía I - UBA</a></li>
-                  <li>
-                    <a href="#">Introducción a la Microeconomía - UdeSA</a>
-                  </li>
-                  -->
                 </ul>
               </li>
-              <!--
-              <li><a href="#">Magister Thesis</a></li>
-              <li>
-                <span class="opener">Other Projects</span>
-                <ul>
-                  <li><a href="#">Gender Gap</a></li>
-                  <li><a href="#">A guide to HANK</a></li>
-                  <li><a href="#">Value Function Iteration in Julia</a></li>
-                </ul>
-              </li>
-              -->
             </ul>
           </nav>
 
           <!-- Contacto -->
           <section>
             <header class="major">
-              <h2>Contact info</h2>
+              <h2>Contact</h2>
             </header>
-            <!-- <p>Some optional text.</p> -->
+            <p>Open to remote full-time roles and contract work.</p>
             <ul class="contact">
-              <li class="icon solid fa-envelope">nico[.]tanzi[a]gmail[.]com</li>
-              <li class="icon solid fa-phone">+54 11 3619-0894</li>
+              <li class="icon solid fa-envelope">
+                <a
+                  class="js-email"
+                  data-user="nico.tanzi"
+                  data-domain="gmail.com"
+                  data-show
+                  >nico.tanzi [at] gmail [dot] com</a
+                >
+              </li>
               <li class="icon solid fa-home">
-                Merlo, Buenos Aires<br />
-                Argentina
+                Buenos Aires, Argentina<br />
+                GMT-3, US-friendly hours
               </li>
             </ul>
           </section>
 
           <!-- Pie -->
           <footer id="footer">
-            <p class="copyright">
-              Thanks for visiting this humble page! Have a nice day!
-            </p>
+            <p class="copyright">Thanks for visiting!</p>
           </footer>
         </div>
       </div>
@@ -468,5 +681,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>
